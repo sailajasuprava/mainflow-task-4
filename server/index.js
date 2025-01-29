@@ -25,7 +25,7 @@ mongoose
   .catch((err) => console.log("ERROR", err));
 
 app.use(cors(corsOptions));
-app.use(express.json);
+app.use(express.json());
 
 app.use("/api/auth", authRouter);
 

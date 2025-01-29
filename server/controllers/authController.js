@@ -5,6 +5,7 @@ const AppError = require("../utils/appArror");
 const signUp = async (req, res, next) => {
   try {
     const { fullname, email, password, passwordConfirm } = req.body;
+
     const newUser = await User.create({
       fullname,
       email,
